@@ -2,11 +2,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Hello from backend!')
 })
 
-app.get('/api/someRoute', (req, res) => {
+app.get('/someRoute', (req, res) => {
     res.send('Hello from someroute in backend!')
 })
 
