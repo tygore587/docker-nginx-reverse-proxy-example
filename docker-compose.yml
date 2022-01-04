@@ -1,8 +1,11 @@
 version: '3'
 services:
-  express:
+  app:
     build: ./app
+  api:
+    build: ./api
   nginx:
     build: ./nginx
     ports:
       - 80:80
+    
